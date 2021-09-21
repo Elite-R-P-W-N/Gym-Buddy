@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GymBuddy">
         <activity android:name=".WorkoutActivity"></activity>
+        <activity android:name=".chest_workout"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

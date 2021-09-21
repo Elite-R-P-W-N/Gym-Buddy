@@ -275,7 +275,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/fitfourtitle"
+                android:id="@+id/fitfivetitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Barbell Benchpress"
@@ -284,7 +284,7 @@
                 app:fontFamily="@font/audiowide" />
 
             <TextView
-                android:id="@+id/fitfourdesc"
+                android:id="@+id/fitfivedesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3 sets of 10 reps each"
@@ -324,7 +324,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/fitfourtitle"
+                android:id="@+id/fitsixtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Low-Cable Crossover"
@@ -333,7 +333,7 @@
                 app:fontFamily="@font/audiowide" />
 
             <TextView
-                android:id="@+id/fitfourdesc"
+                android:id="@+id/fitsixdesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3 sets of 10 reps each"
