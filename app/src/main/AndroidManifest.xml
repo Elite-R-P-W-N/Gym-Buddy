@@ -9,8 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GymBuddy">
-        <activity android:name=".WorkoutActivity"></activity>
-        <activity android:name=".chest_workout"></activity>
+        <activity android:name=".WorkoutActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.ALTERNATIVE" />
+            </intent-filter>></activity>
+        <activity android:name=".chest_workout"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.ALTERNATIVE" />
+            </intent-filter>></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

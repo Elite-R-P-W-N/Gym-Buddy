@@ -37,8 +37,8 @@ public class chest_workout extends AppCompatActivity {
 
         titlepage = (TextView) findViewById(R.id.titlepage);
         subtitlepage = (TextView) findViewById(R.id.subtitlepage);
-        intropage = (TextView) findViewById(R.id.intropage);
-        subintropage = (TextView) findViewById(R.id.subintropage);
+      //  intropage = (TextView) findViewById(R.id.intropage);
+     //   subintropage = (TextView) findViewById(R.id.subintropage);
         btnexercise = (TextView) findViewById(R.id.btnexercise);
         fitonetitle = (TextView) findViewById(R.id.fitonetitle);
         fitonedesc = (TextView) findViewById(R.id.fitonedesc);
@@ -68,8 +68,8 @@ public class chest_workout extends AppCompatActivity {
         subtitlepage.startAnimation(btone);
         divpage.startAnimation(btone);
 
-        intropage.startAnimation(bttwo);
-        subintropage.startAnimation(bttwo);
+    //    intropage.startAnimation(bttwo);
+    //    subintropage.startAnimation(bttwo);
 
         fitone.startAnimation(bttwo);
         fittwo.startAnimation(btfour);
@@ -84,7 +84,7 @@ public class chest_workout extends AppCompatActivity {
         btnexercise.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(chest_workout.this,MainActivity.class);
+                Intent a = new Intent(chest_workout.this,WorkoutActivity.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
             }
