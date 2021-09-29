@@ -23,6 +23,31 @@
 
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>></activity>
+
+        <activity android:name=".bicep_workout"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.ALTERNATIVE" />
+            </intent-filter>></activity>
+
+        <activity android:name=".shoulder_workout"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.ALTERNATIVE" />
+            </intent-filter>></activity>
+
+        <activity android:name=".leg_workout"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.ALTERNATIVE" />
+            </intent-filter>></activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

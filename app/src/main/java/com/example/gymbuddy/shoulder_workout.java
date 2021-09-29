@@ -10,7 +10,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class chest_workout extends AppCompatActivity {
+public class shoulder_workout extends AppCompatActivity {
 
     TextView titlepage, subtitlepage, intropage, subintropage, btnexercise, fitonetitle, fitonedesc, fittwotitle, fittwodesc, fitthreetitle,
             fitthreedesc, fitfourtitle, fitfourdesc, fitfivetitle, fitfivedesc, fitsixtitle, fitsixdesc;
@@ -24,7 +24,7 @@ public class chest_workout extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.chest_workout);
+        setContentView(R.layout.shoulder_workout);
 
         //Load Animation
         btone = AnimationUtils.loadAnimation(this,R.anim.btone);
@@ -80,7 +80,7 @@ public class chest_workout extends AppCompatActivity {
         btnexercise.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(chest_workout.this,WorkoutActivity.class);
+                Intent a = new Intent(shoulder_workout.this,WorkoutActivity.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
             }

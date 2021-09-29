@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="#202020"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:lineSpacingExtra="8dp"
-        android:text="Top Exercises"
+        android:text="Best Shoulder Exercises"
         android:textColor="#fff"
         android:textSize="28sp"
         app:fontFamily="@font/audiowide"
@@ -29,7 +29,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="5dp"
         android:lineSpacingExtra="8dp"
-        android:text="Easy Exercises 4 Beginners."
+        android:text="Grow your shoulders by doing these exercises."
         android:textColor="#fff"
         android:textSize="17sp"
         app:fontFamily="sans-serif"
@@ -42,43 +42,15 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginEnd="26dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
         android:background="#fff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/subtitlepage"
         />
 
-    <TextView
-        android:id="@+id/intropage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="24dp"
-        android:lineSpacingExtra="8dp"
-        android:text="Introduction"
-        android:textColor="#fff"
-        android:textSize="24sp"
-        app:fontFamily="@font/audiowide"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divpage"
-        android:layout_marginLeft="24dp" />
 
-    <TextView
-        android:id="@+id/subintropage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="6dp"
-        android:lineSpacingExtra="5dp"
-        android:text="You can add here whatever related  \nto your exercises."
-        android:textColor="#fff"
-        android:textSize="16sp"
-        app:fontFamily="sans-serif"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intropage"
-        android:layout_marginLeft="24dp" />
 
     <LinearLayout
         android:id="@+id/fitone"
@@ -90,12 +62,12 @@
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subintropage"
+        app:layout_constraintTop_toBottomOf="@+id/divpage"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="24dp">
 
         <ImageView
-            android:src="@drawable/chest"
+            android:src="@drawable/ohpress"
             android:layout_width="110dp"
             android:layout_height="70dp"/>
 
@@ -110,7 +82,7 @@
                 android:id="@+id/fitonetitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Chest Workout"
+                android:text="Barbell Overhead Press"
                 android:textColor="#fff"
                 android:textSize="17sp"
                 app:fontFamily="@font/audiowide" />
@@ -120,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="3 To 13 Minutes"
+                android:text="3 sets of 12 reps each"
                 android:textColor="#fff"
                 android:textSize="15sp"
                 />
@@ -144,7 +116,7 @@
         android:layout_marginLeft="24dp">
 
         <ImageView
-            android:src="@drawable/bicep"
+            android:src="@drawable/sdf"
             android:layout_width="110dp"
             android:layout_height="70dp"/>
 
@@ -159,7 +131,7 @@
                 android:id="@+id/fittwotitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bicep Workout"
+                android:text="Standing Dumbbell Fly"
                 android:textColor="#fff"
                 android:textSize="17sp"
                 app:fontFamily="@font/audiowide" />
@@ -168,7 +140,7 @@
                 android:id="@+id/fittwodesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4 To 14 Minutes"
+                android:text="3 sets of 12 reps each"
                 android:layout_marginTop="5dp"
                 android:textColor="#fff"
                 android:textSize="15sp"
@@ -193,7 +165,7 @@
         android:layout_marginLeft="24dp">
 
         <ImageView
-            android:src="@drawable/shoulder"
+            android:src="@drawable/hp"
             android:layout_width="110dp"
             android:layout_height="70dp"/>
 
@@ -208,7 +180,7 @@
                 android:id="@+id/fitthreetitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Shoulder Workout"
+                android:text="High Pull"
                 android:textColor="#fff"
                 android:textSize="17sp"
                 app:fontFamily="@font/audiowide" />
@@ -217,7 +189,7 @@
                 android:id="@+id/fitthreedesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5 To 15 Minutes"
+                android:text="3 sets of 12 reps each"
                 android:layout_marginTop="5dp"
                 android:textColor="#fff"
                 android:textSize="15sp"
@@ -242,7 +214,7 @@
         android:layout_marginLeft="24dp">
 
         <ImageView
-            android:src="@drawable/leg"
+            android:src="@drawable/lateral"
             android:layout_width="110dp"
             android:layout_height="70dp"/>
 
@@ -257,7 +229,7 @@
                 android:id="@+id/fitfourtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Leg Workout"
+                android:text="Dumbbell Bent-Over Lateral Raise"
                 android:textColor="#fff"
                 android:textSize="17sp"
                 app:fontFamily="@font/audiowide" />
@@ -266,7 +238,105 @@
                 android:id="@+id/fitfourdesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10 To 25 Minutes"
+                android:text="3 sets of 10 reps each"
+                android:layout_marginTop="5dp"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fitfive"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fitfour"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="24dp">
+
+        <ImageView
+            android:src="@drawable/seatedoh"
+            android:layout_width="110dp"
+            android:layout_height="70dp"/>
+
+        <LinearLayout
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fitfivetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seated Dumbbell Clean"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                app:fontFamily="@font/audiowide" />
+
+            <TextView
+                android:id="@+id/fitfivedesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 sets of 10 reps each"
+                android:layout_marginTop="5dp"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fitsix"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fitfive"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="24dp">
+
+        <ImageView
+            android:src="@drawable/fp"
+            android:layout_width="110dp"
+            android:layout_height="70dp"/>
+
+        <LinearLayout
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fitsixtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Face Pull"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                app:fontFamily="@font/audiowide" />
+
+            <TextView
+                android:id="@+id/fitsixdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 sets of 10 reps each"
                 android:layout_marginTop="5dp"
                 android:textColor="#fff"
                 android:textSize="15sp"
@@ -295,7 +365,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:gravity="center"
-        android:text="CHECK DIET PLANS"
+        android:text="BACK TO HOME"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="16sp"

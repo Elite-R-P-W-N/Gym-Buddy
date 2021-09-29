@@ -81,5 +81,33 @@ public class WorkoutActivity extends AppCompatActivity {
                 startActivity(a);
             }
         });
+
+        fittwo.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(WorkoutActivity.this,bicep_workout.class);
+                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(a);
+            }
+        });
+
+        fitthree.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(WorkoutActivity.this,shoulder_workout.class);
+                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(a);
+            }
+        });
+
+        fitfour.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(WorkoutActivity.this,leg_workout.class);
+                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(a);
+            }
+        });
+
     }
 }
