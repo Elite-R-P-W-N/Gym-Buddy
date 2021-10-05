@@ -48,6 +48,55 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>></activity>
 
+        <activity android:name=".diet_plans"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.ALTERNATIVE" />
+        </intent-filter>></activity>
+
+        <activity android:name=".weight_loss"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.ALTERNATIVE" />
+            </intent-filter>></activity>
+
+        <activity android:name=".muscle_gain"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.ALTERNATIVE" />
+            </intent-filter>></activity>
+
+        <activity android:name=".weight_gain"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.ALTERNATIVE" />
+            </intent-filter>></activity>
+
+        <activity android:name=".bulk_diet"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.ALTERNATIVE" />
+            </intent-filter>></activity>
+
+        <activity android:name=".bmi"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.ALTERNATIVE" />
+            </intent-filter>></activity>
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

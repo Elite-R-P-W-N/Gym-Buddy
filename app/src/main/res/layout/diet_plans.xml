@@ -5,38 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".MainActivity">
+    tools:context=".diet_plans">
 
+    <TextView
+        android:id="@+id/titlepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:lineSpacingExtra="8dp"
+        android:text="DIET PLANS"
+        android:textColor="#fff"
+        android:textSize="28sp"
+        app:fontFamily="@font/audiowide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="24dp" />
 
-            <TextView
-                android:id="@+id/titlepage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="24dp"
-                android:lineSpacingExtra="8dp"
-                android:text="Top Exercises"
-                android:textColor="#fff"
-                android:textSize="28sp"
-                app:fontFamily="@font/audiowide"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginLeft="24dp" />
-
-            <TextView
-                android:id="@+id/subtitlepage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="5dp"
-                android:lineSpacingExtra="8dp"
-                android:text="Easy Exercises 4 Beginners."
-                android:textColor="#fff"
-                android:textSize="17sp"
-                app:fontFamily="sans-serif"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/titlepage"
-                android:layout_marginLeft="24dp" />
+    <TextView
+        android:id="@+id/subtitlepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="8dp"
+        android:text="Goal Oriented Diet Plans"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlepage"
+        android:layout_marginLeft="24dp" />
 
     <View
         android:id="@+id/divpage"
@@ -52,33 +51,18 @@
         />
 
     <TextView
-        android:id="@+id/intropage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="24dp"
-        android:lineSpacingExtra="8dp"
-        android:text="Introduction"
-        android:textColor="#fff"
-        android:textSize="24sp"
-        app:fontFamily="@font/audiowide"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divpage"
-        android:layout_marginLeft="24dp" />
-
-    <TextView
         android:id="@+id/subintropage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="6dp"
         android:lineSpacingExtra="5dp"
-        android:text="You can add here whatever related  \nto your exercises."
+        android:text="Choose out of the following diet plans \nas per your goals."
         android:textColor="#fff"
         android:textSize="16sp"
         app:fontFamily="sans-serif"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intropage"
+        app:layout_constraintTop_toBottomOf="@id/divpage"
         android:layout_marginLeft="24dp" />
 
     <LinearLayout
@@ -96,7 +80,7 @@
         android:layout_marginLeft="24dp">
 
         <ImageView
-            android:src="@drawable/chest"
+            android:src="@drawable/wl"
             android:layout_width="110dp"
             android:layout_height="70dp"/>
 
@@ -111,7 +95,7 @@
                 android:id="@+id/fitonetitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Chest Workout"
+                android:text="Weight Loss"
                 android:textColor="#fff"
                 android:textSize="17sp"
                 app:fontFamily="@font/audiowide" />
@@ -121,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="3 To 13 Minutes"
+                android:text="Diet plan for weight loss"
                 android:textColor="#fff"
                 android:textSize="15sp"
                 />
@@ -145,7 +129,7 @@
         android:layout_marginLeft="24dp">
 
         <ImageView
-            android:src="@drawable/bicep"
+            android:src="@drawable/mg"
             android:layout_width="110dp"
             android:layout_height="70dp"/>
 
@@ -160,7 +144,7 @@
                 android:id="@+id/fittwotitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bicep Workout"
+                android:text="Muscle Gain"
                 android:textColor="#fff"
                 android:textSize="17sp"
                 app:fontFamily="@font/audiowide" />
@@ -169,7 +153,7 @@
                 android:id="@+id/fittwodesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4 To 14 Minutes"
+                android:text="Diet Plan for gaining muscle"
                 android:layout_marginTop="5dp"
                 android:textColor="#fff"
                 android:textSize="15sp"
@@ -194,7 +178,7 @@
         android:layout_marginLeft="24dp">
 
         <ImageView
-            android:src="@drawable/shoulder"
+            android:src="@drawable/wg"
             android:layout_width="110dp"
             android:layout_height="70dp"/>
 
@@ -209,7 +193,7 @@
                 android:id="@+id/fitthreetitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Shoulder Workout"
+                android:text="Weight Gain"
                 android:textColor="#fff"
                 android:textSize="17sp"
                 app:fontFamily="@font/audiowide" />
@@ -218,7 +202,7 @@
                 android:id="@+id/fitthreedesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5 To 15 Minutes"
+                android:text="Diet Plan to gain weight"
                 android:layout_marginTop="5dp"
                 android:textColor="#fff"
                 android:textSize="15sp"
@@ -243,7 +227,7 @@
         android:layout_marginLeft="24dp">
 
         <ImageView
-            android:src="@drawable/leg"
+            android:src="@drawable/bulk"
             android:layout_width="110dp"
             android:layout_height="70dp"/>
 
@@ -258,7 +242,7 @@
                 android:id="@+id/fitfourtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Leg Workout"
+                android:text="Bulk Diet"
                 android:textColor="#fff"
                 android:textSize="17sp"
                 app:fontFamily="@font/audiowide" />
@@ -267,7 +251,7 @@
                 android:id="@+id/fitfourdesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10 To 25 Minutes"
+                android:text="Caloric surplus diet for bulking"
                 android:layout_marginTop="5dp"
                 android:textColor="#fff"
                 android:textSize="15sp"
@@ -276,35 +260,6 @@
         </LinearLayout>
 
     </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/fitfive"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fitfour"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="24dp"
-        android:gravity="center">
-
-        <Button
-            android:id="@+id/btnbmi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="25dp"
-            android:text="Calculate BMI"
-            android:textColor="#fff"
-            app:backgroundTint="#505050"></Button>
-
-
-    </LinearLayout>
-
 
     <View
         android:id="@+id/bgprogress"
@@ -321,14 +276,14 @@
         android:id="@+id/btnexercise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:gravity="center"
-        android:text="CHECK DIET PLANS"
+        android:text="BACK TO HOME"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="16sp"
+        android:textSize="14sp"
         app:fontFamily="@font/audiowide"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

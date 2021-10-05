@@ -7,11 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class WorkoutActivity extends AppCompatActivity {
+public class diet_plans extends AppCompatActivity {
 
     TextView titlepage, subtitlepage, intropage, subintropage, btnexercise, fitonetitle, fitonedesc, fittwotitle, fittwodesc, fitthreetitle,
             fitthreedesc, fitfourtitle, fitfourdesc;
@@ -20,14 +19,12 @@ public class WorkoutActivity extends AppCompatActivity {
 
     Animation btone, bttwo, btfour, btfive, btsix, btseven, bteight;
 
-    LinearLayout fitone, fittwo, fitthree, fitfour, fitfive;
-
-    Button btnbmi;
+    LinearLayout fitone, fittwo, fitthree, fitfour;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_workout);
+        setContentView(R.layout.diet_plans);
 
         //Load Animation
         btone = AnimationUtils.loadAnimation(this,R.anim.btone);
@@ -40,7 +37,6 @@ public class WorkoutActivity extends AppCompatActivity {
 
         titlepage = (TextView) findViewById(R.id.titlepage);
         subtitlepage = (TextView) findViewById(R.id.subtitlepage);
-        intropage = (TextView) findViewById(R.id.intropage);
         subintropage = (TextView) findViewById(R.id.subintropage);
         btnexercise = (TextView) findViewById(R.id.btnexercise);
         fitonetitle = (TextView) findViewById(R.id.fitonetitle);
@@ -56,10 +52,6 @@ public class WorkoutActivity extends AppCompatActivity {
         fittwo = (LinearLayout) findViewById(R.id.fittwo);
         fitthree = (LinearLayout) findViewById(R.id.fitthree);
         fitfour = (LinearLayout) findViewById(R.id.fitfour);
-        fitfive = (LinearLayout) findViewById(R.id.fitfive);
-
-
-        btnbmi = (Button) findViewById(R.id.btnbmi);
 
         divpage = (View) findViewById(R.id.divpage);
         bgprogress = (View) findViewById(R.id.bgprogress);
@@ -69,7 +61,6 @@ public class WorkoutActivity extends AppCompatActivity {
         subtitlepage.startAnimation(btone);
         divpage.startAnimation(btone);
 
-        intropage.startAnimation(bttwo);
         subintropage.startAnimation(bttwo);
 
         fitone.startAnimation(bttwo);
@@ -83,7 +74,7 @@ public class WorkoutActivity extends AppCompatActivity {
         fitone.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(WorkoutActivity.this,chest_workout.class);
+                Intent a = new Intent(diet_plans.this,weight_loss.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
             }
@@ -92,7 +83,7 @@ public class WorkoutActivity extends AppCompatActivity {
         fittwo.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(WorkoutActivity.this,bicep_workout.class);
+                Intent a = new Intent(diet_plans.this,muscle_gain.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
             }
@@ -101,7 +92,7 @@ public class WorkoutActivity extends AppCompatActivity {
         fitthree.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(WorkoutActivity.this,shoulder_workout.class);
+                Intent a = new Intent(diet_plans.this,weight_gain.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
             }
@@ -110,7 +101,7 @@ public class WorkoutActivity extends AppCompatActivity {
         fitfour.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(WorkoutActivity.this,leg_workout.class);
+                Intent a = new Intent(diet_plans.this,bulk_diet.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
             }
@@ -119,20 +110,10 @@ public class WorkoutActivity extends AppCompatActivity {
         btnexercise.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(WorkoutActivity.this,diet_plans.class);
+                Intent a = new Intent(diet_plans.this,WorkoutActivity.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
             }
         });
-
-        btnbmi.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Intent a = new Intent(WorkoutActivity.this,bmi.class);
-                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                startActivity(a);
-            }
-        });
-
     }
 }

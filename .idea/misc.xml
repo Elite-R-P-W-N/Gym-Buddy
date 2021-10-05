@@ -4,11 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Abhineet/Documents/GitHub/Gym-Buddy/app/src/main/res/layout/activity_main.xml" value="0.152" />
-        <entry key="..\:/Users/Abhineet/Documents/GitHub/Gym-Buddy/app/src/main/res/layout/activity_workout.xml" value="0.1" />
+        <entry key="..\:/Users/Abhineet/Documents/GitHub/Gym-Buddy/app/src/main/res/layout/activity_workout.xml" value="0.264" />
         <entry key="..\:/Users/Abhineet/Documents/GitHub/Gym-Buddy/app/src/main/res/layout/bicep_workout.xml" value="0.12395833333333334" />
-        <entry key="..\:/Users/Abhineet/Documents/GitHub/Gym-Buddy/app/src/main/res/layout/chest_workout.xml" value="0.16" />
+        <entry key="..\:/Users/Abhineet/Documents/GitHub/Gym-Buddy/app/src/main/res/layout/bmi.xml" value="0.264" />
+        <entry key="..\:/Users/Abhineet/Documents/GitHub/Gym-Buddy/app/src/main/res/layout/bulk_diet.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/Abhineet/Documents/GitHub/Gym-Buddy/app/src/main/res/layout/chest_workout.xml" value="0.2" />
+        <entry key="..\:/Users/Abhineet/Documents/GitHub/Gym-Buddy/app/src/main/res/layout/diet_plans.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/Abhineet/Documents/GitHub/Gym-Buddy/app/src/main/res/layout/leg_workout.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/Abhineet/Documents/GitHub/Gym-Buddy/app/src/main/res/layout/muscle_gain.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/Abhineet/Documents/GitHub/Gym-Buddy/app/src/main/res/layout/shoulder_workout.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/Abhineet/Documents/GitHub/Gym-Buddy/app/src/main/res/layout/weight_gain.xml" value="0.264" />
+        <entry key="..\:/Users/Abhineet/Documents/GitHub/Gym-Buddy/app/src/main/res/layout/weight_loss.xml" value="0.264" />
       </map>
     </option>
   </component>
